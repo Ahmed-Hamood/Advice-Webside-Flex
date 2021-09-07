@@ -1,0 +1,89 @@
+#about .items {
+  display: block;
+  /* or 
+  display: flex;
+  flex-direction: column;
+  */
+  padding: 1rem;
+}
+
+/* Align icon to left */
+#about .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position icon */
+#about .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Smartphones */
+@media(max-width: 619px) {
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar .logo {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+
+  .showcase .showcase-content {
+    top: 110px;
+  }
+ 
+  #who{ 
+     display: block;
+  }
+  
+  #who .who-img {
+       display: block;
+       height: 450px;
+       width: 100%;
+  }
+
+
+  #client .items img {
+    width: 80%;
+  }
+
+  #client .items div:last-child {
+    display: none;
+  }
+
+  #contactandmap { 
+     flex-direction: column;
+    display: block;
+  
+     
+  }
+ label{
+   margin-bottom: 0.50rem;
+ }
+  #contactandmap .map {
+   
+    height: 500px;
+    width: 100%;
+    border-top: 4px solid #333;
+  }
+}
+
+@media(max-height: 568px) {
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: 140px;
+  }
+  .lead {
+    font-size: 0.20rem;
+  }
+}
